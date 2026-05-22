@@ -1,0 +1,9 @@
+[deploy]
+startCommand = "python main.py"
+
+[[services]]
+name = "iykg-bot"
+
+[cron]
+schedule = "0 7 * * *"
+command = "python main.py"
