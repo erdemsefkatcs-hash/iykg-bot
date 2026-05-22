@@ -1,9 +1,6 @@
+[build]
+buildCommand = "pip install -r requirements.txt"
+
 [deploy]
 startCommand = "python main.py"
-
-[[services]]
-name = "iykg-bot"
-
-[cron]
-schedule = "0 7 * * *"
-command = "python main.py"
+cronSchedule = "0 7 * * *"
